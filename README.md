@@ -20,11 +20,7 @@ Create the Contacts DataFrame
 
 Create the Crowdfunding Database
 - TBA
-  
-Create the Campaign DataFrame
-- TBA
 
-- 
 
 # References
 
