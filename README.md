@@ -22,22 +22,22 @@ This project's source code and results are structured as follows:
 
 ## Implementation notes
 
-Create the Category and Subcategory DataFrames
-- TBA
-
-Create the Campaign DataFrame
-- TBA
-
-Create the Contacts DataFrame
-- TBA
-
-Create the Crowdfunding Database
-- TBA
+Jupyter Notebook - section 'Create the Contacts DataFrame'
+- We found we needed to use `header=3` parameter in order to read the data file correctly. (The starter code comment suggested `header=2` but the actual Excel file had 3 rows above the data table.)
 
 
-## References
+Create the Crowdfunding Database - QuickDBD
+- We inspected the 4 CSV files (output from the Jupyter Notebook analysis) and created an Entity-Relationship Diagram (ERD) using QuickDBD.
+- The ERD included definition of Postgres-compatible data types, and table relationships including primary and foreign key constraints.
+- QuickDBD was then used to export the design as:
+    - a Postgres-compatible SQL script (***crowdfunding_db_schema.sql***)
+    - a corresponding ERD diagram image (***crowdfunding_db_schema.png***)
 
-The following references were used in the development of the solution for this Challenge.
-
-### Topic 1
-- reference 1
+Create the Crowdfunding Database - Postgres
+- pgAdmin4 was used to create the ***crowdfunding_db*** Postgres database.
+- The 'Query Tool' was then used to run the table creation script (that is, the contents of our ***crowdfunding_db_schema.sql*** file).
+- We then right-clicked on each table name and ran the 'Import/Export Data' option to select each individual CSV file from our ***Resources*** folder, taking care to load the files in an appropriate order according to the table relationships. For example, one possible load order is:
+    1. Subcategory.csv
+    1. Category.csv
+    1. Contact.csv
+    1. Campaign.csv
