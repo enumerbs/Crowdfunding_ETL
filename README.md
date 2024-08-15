@@ -14,7 +14,8 @@ This project's source code and results are structured as follows:
     - supplied input data files (Excel spreadsheets) for this analysis, and
     - the CSV files generated from the analysis, that were then used to populate the corresponding PostgreSQL database tables.
 - ***Results*** subfolder contains:
-    - screenshots of the final SQL queries run in pgAdmin4 to verify the database creation/table contents.
+    - ***crowdfunding_db.sql*** file contains PostgreSQL query statements for selecting the data from each table
+    - corresponding screenshots of the final SQL queries run in pgAdmin4 to verify the database creation/table contents.
 
 ## Implementation notes
 
