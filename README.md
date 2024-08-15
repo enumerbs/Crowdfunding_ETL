@@ -1,7 +1,6 @@
-Data Analytics Boot Camp - Project 2 - Group 4 \
+Data Analytics Boot Camp - Project 2 - Group 4
+
 # Crowdfunding ETL
-
-
 
 ## Results
 
@@ -13,9 +12,13 @@ This project's source code and results are structured as follows:
 - ***Resources*** subfolder contains the:
     - supplied input data files (Excel spreadsheets) for this analysis, and
     - the CSV files generated from the analysis, that were then used to populate the corresponding PostgreSQL database tables.
-- ***Results*** subfolder contains:
+- ***select.queries*** subfolder contains:
     - ***crowdfunding_db.sql*** file contains PostgreSQL query statements for selecting the data from each table
-    - corresponding screenshots of the final SQL queries run in pgAdmin4 to verify the database creation/table contents.
+    - corresponding screenshots of the final SQL queries run in pgAdmin4 to verify the database creation/table contents, namely:
+        - Campaign.jpg
+        - Contact.jpg
+        - Category.jpg
+        - Subcategory.jpg
 
 ## Implementation notes
 
